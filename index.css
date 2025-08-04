@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #910c0c;
+}
+.navbar h2{
+    color: #d2a679;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;cursor: pointer;
+}
+.nav-item a:hover{
+    color: #910c0c;
+    font-weight: bold;
+    border-radius: 8vh;
+    background-color: #ffc107;
+}
+/* homesection */
+
+ #home {
+   
+  height: 100vh; /* Full screen height on desktop */
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;   /* so content stacks vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  text-align: center;
+  padding: 0 20px; /* some horizontal padding for smaller screens */
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  /* optional overlay effect */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#home p {
+  color: white;
+  margin: 10px 0;
+}
+
+#home .btn {
+  color: white;
+  font-weight: bold;
+  border-radius: 2vh;
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
+@media (max-width: 786px) {
+  #home {
+    height: auto;
+    background-size: cover; /* keep cover for a nice look */
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .overlay {
+    
+    height: auto;
+    padding: 20px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  #home .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* aboutsection */
+#about {
+  height: 100vh;
+ background-color: #5a3a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center horizontally */
+  justify-content: center;   /* center vertically */
+  text-align: center;
+  padding: 20px;             /* prevent overflow on small screens */
+}
+
+#about img {
+  height: 56vh;
+  width: 56vh;
+  margin-top: 24vh;
+  object-fit: cover;
+}
+
+#about h1 {
+  color: white;
+  margin-top: 28vh;
+}
+
+#about p {
+  color: white;
+  max-width: 600px;        /* keep text readable */
+  margin: 10px auto;       /* center horizontally */
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 1169px) {
+  #about img {
+    height: 40vh;
+    width: 40vh;
+    margin-top: 10vh;
+  }
+
+  #about h1 {
+    margin-top: 10vh;
+    font-size: 2rem;
+  }
+
+  #about p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #about {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #about img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #about h1 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+}
+/* memusection */
+#menu{
+    height: 100vh;
+  background-color: #c8a165;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#menu img{
+    display: flex;
+    margin: auto;
+    height: 45vh;
+    width: 45vh;
+}
+#menu h3{
+    text-align: center;
+    color: black;
+   padding-top: 5vh;
+}
+#menu p{
+   text-align: center;
+    color: black;
+   padding-top: 2vh;
+}
+@media (max-width:436px) {
+    #menu{
+         height: auto;
+    padding: 40px 20px;
+    }
+     #menu img{
+        height: 40vh;
+        width: 40vh;
+        margin-top: 20px;
+        
+     }
+      #menu h1 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+
+  #menu p {
+    font-size: 1rem;
+  }
+}
+/* testimonialssection */
+
+
+
+#testimonials {background-color: #f5eee6;
+  padding: 10vh 0;
+  height: 100vh; /* Add vertical spacing for the whole section */
+}
+
+#testimonials h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 8vh;
+  padding-top: 7vh;
+  
+}
+
+#testimonials img {
+  height: 25vh;
+  width: 25vh;
+  object-fit: cover;
+  border-radius: 50%; /* Often nice for testimonials */
+  display: block;
+  margin: 0 auto; /* Center images if needed */
+}
+
+#testimonials h3,
+#testimonials p {
+  color: black;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#testimonials .carousel-item .d-flex {
+  gap: 15vh; /* Smaller gap for better responsiveness */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrap on small screens */
+}
+/* contactsection */
+#contact {
+    height: 100vh;
+    padding: 80px 10px;
+      background-color: #eee3d1;
+    overflow: hidden;
+}
+#contact img{
+ width:100vh;
+  height:100vh;
+  object-fit: cover; /* makes sure image covers area nicely */
+  display: block;
+  
+}
+#contact .col-md-5 {
+  height: 100%;
+}
+
+#contact svg {
+    width: 20px;
+    height: 20px;
+}
+
+#contact p {
+    margin-bottom: 0;      /* Remove extra space under p */
+    margin-left: 8px;      /* space between icon and text */
+  
+}
+
+
+
+ 
+@media (max-width: 768px) {
+  #testimonials {
+    height: auto;   /* allow content to decide height */
+    padding: 5vh 0; /* smaller padding on mobile */
+  }
+
+  #contact {
+    height: auto;   /* allow content to decide height */
+    padding: 5vh 10px; /* adjust top/bottom padding */
+  }
+
+  #contact .col-md-5 {
+    height: auto; /* image column also grows naturally */
+  }
+
+  #contact img {
+    width: 100%;
+    height: auto;     /* image keeps aspect ratio instead of forcing full height */
+    object-fit: cover;
+  }
+}
+#contact {
+  background-image: url(coffee4.jpg);
+ background-repeat: no-repeat;
+ background-position: right; 
+ width: 100%;
+ height: 100%;
+position: relative;
+overflow: hidden;
+padding: 30px 10px;
+background-size: contain;
+}
+#contact h1 ,h4 {
+  padding-top: 10vh ;
+}
+#contact .col-md-7{
+  padding: 10px 10px;
+}
+#contact  .input{
+  margin-top: 10px;
+  padding: 5px;
+}
+#contact .btn{
+border: black solid 4px;
+background: black;
+color: white;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap-reverse;
+}
+@media (max-width:1219px){
+#contact {
+  height: auto;
+  padding: 80px 40px;
+  background-size: contain;
+}
+  }@media (max-width:939px){
+#contact {
+ background-image: none;
+ 
+}
+.row{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ height: auto;
+ margin: auto;
+
+}
+
+  }
